@@ -1,5 +1,8 @@
 # ShipShape MCP Server
 
+[![CI](https://github.com/UnderSampled/shipshape/actions/workflows/ci.yml/badge.svg)](https://github.com/UnderSampled/shipshape/actions/workflows/ci.yml)
+[![Deploy](https://github.com/UnderSampled/shipshape/actions/workflows/deploy.yml/badge.svg)](https://github.com/UnderSampled/shipshape/actions/workflows/deploy.yml)
+
 A serverless Model Context Protocol (MCP) server for Cloudflare Workers, written in Python.
 
 ## Features
@@ -79,16 +82,46 @@ async def my_tool(args: dict, context: ToolContext) -> str:
 
 ```
 shipshape/
+├── .github/workflows/
+│   ├── ci.yml           # CI workflow (lint, type check, test)
+│   └── deploy.yml       # CD workflow (deploy to Cloudflare)
 ├── src/
 │   ├── mcp_server/
 │   │   ├── __init__.py
 │   │   ├── server.py    # Core MCP server
 │   │   └── types.py     # Type definitions
 │   └── worker.py        # Cloudflare Worker entry point
+├── tests/
+│   └── test_server.py   # Test suite
 ├── wrangler.toml        # Cloudflare config
 ├── pyproject.toml       # Python project config
 └── README.md
 ```
+
+## CI/CD Setup
+
+The project includes GitHub Actions workflows for continuous integration and deployment.
+
+### Required Secrets
+
+Add these secrets to your GitHub repository (Settings → Secrets and variables → Actions):
+
+| Secret | Description |
+|--------|-------------|
+| `CLOUDFLARE_API_TOKEN` | Cloudflare API token with Workers permissions |
+| `CLOUDFLARE_ACCOUNT_ID` | Your Cloudflare account ID |
+
+### Creating a Cloudflare API Token
+
+1. Go to [Cloudflare Dashboard](https://dash.cloudflare.com/profile/api-tokens)
+2. Click "Create Token"
+3. Use the "Edit Cloudflare Workers" template
+4. Copy the token and add it as `CLOUDFLARE_API_TOKEN` secret
+
+### Workflows
+
+- **CI** (`ci.yml`): Runs on all pushes and PRs. Lints with ruff, type checks with mypy, runs tests.
+- **Deploy** (`deploy.yml`): Runs on pushes to main. Tests then deploys to Cloudflare Workers.
 
 ## License
 
