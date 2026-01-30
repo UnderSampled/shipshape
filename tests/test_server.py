@@ -1,7 +1,8 @@
 """Tests for the MCP server."""
 
 import pytest
-from mcp_server import create_server, ToolContext
+
+from mcp_server import ToolContext, create_server
 
 
 @pytest.fixture

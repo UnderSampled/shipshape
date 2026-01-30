@@ -1,21 +1,20 @@
 """Serverless MCP Server implementation."""
 
 import json
-from dataclasses import dataclass, field, asdict
-from typing import Any, Callable, Awaitable
+from collections.abc import Awaitable, Callable
+from dataclasses import asdict, dataclass, field
+from typing import Any
 
 from .types import (
-    Tool,
-    Resource,
-    Prompt,
-    ServerInfo,
-    ServerCapabilities,
+    JsonRpcError,
     JsonRpcRequest,
     JsonRpcResponse,
-    JsonRpcError,
+    Prompt,
+    Resource,
+    ServerCapabilities,
+    ServerInfo,
+    Tool,
     ToolContext,
-    TextContent,
-    ToolResult,
 )
 
 
@@ -109,7 +108,7 @@ class McpServer:
         arguments: list[dict[str, Any]] | None = None,
     ) -> Callable[
         [Callable[[dict[str, str]], Awaitable[list[dict[str, str]]]]],
-        Callable[[dict[str, str]], Awaitable[list[dict[str, str]]]]],
+        Callable[[dict[str, str]], Awaitable[list[dict[str, str]]]]
     ]:
         """Decorator to register a prompt."""
 
@@ -241,7 +240,7 @@ class McpServer:
             "resources/read": self._handle_resources_read,
             "prompts/list": self._handle_prompts_list,
             "prompts/get": self._handle_prompts_get,
-            "ping": lambda p, c: {},
+            "ping": self._handle_ping,
         }
 
         handler = handlers.get(method)
@@ -352,6 +351,11 @@ class McpServer:
 
         messages = await handler(arguments)
         return {"description": prompt.description, "messages": messages}
+
+    async def _handle_ping(
+        self, params: dict[str, Any], context: ToolContext
+    ) -> dict[str, Any]:
+        return {}
 
 
 def create_server(name: str, version: str) -> McpServer:

@@ -1,8 +1,9 @@
 """Type definitions for the MCP server."""
 
+from collections.abc import Awaitable, Callable
 from dataclasses import dataclass, field
-from typing import Any, Callable, Awaitable, TypeVar, Generic
 from enum import Enum
+from typing import Any
 
 
 class ContentType(Enum):

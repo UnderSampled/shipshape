@@ -1,8 +1,8 @@
 """Cloudflare Worker entry point for the MCP server."""
 
-from js import Response, Headers
-from mcp_server import create_server, ToolContext
+from js import Headers, Response
 
+from mcp_server import ToolContext, create_server
 
 # Create the MCP server
 server = create_server(name="shipshape-mcp", version="1.0.0")
