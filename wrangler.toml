@@ -1,4 +1,4 @@
-name = "shipshape-mcp"
+name = "shipshape"
 main = "src/worker.py"
 compatibility_date = "2024-01-01"
 compatibility_flags = ["python_workers"]

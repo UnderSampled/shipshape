@@ -1,7 +1,6 @@
 """Serverless MCP Server implementation."""
 
 import json
-from collections.abc import Awaitable, Callable
 from dataclasses import asdict, dataclass, field
 from typing import Any
 
@@ -41,13 +40,9 @@ class McpServer:
     capabilities: ServerCapabilities = field(default_factory=ServerCapabilities)
     _tools: dict[str, Tool] = field(default_factory=dict)
     _resources: dict[str, Resource] = field(default_factory=dict)
-    _resource_handlers: dict[str, Callable[[str], Awaitable[dict[str, Any]]]] = field(
-        default_factory=dict
-    )
+    _resource_handlers: dict[str, Any] = field(default_factory=dict)
     _prompts: dict[str, Prompt] = field(default_factory=dict)
-    _prompt_handlers: dict[
-        str, Callable[[dict[str, str]], Awaitable[list[dict[str, str]]]]
-    ] = field(default_factory=dict)
+    _prompt_handlers: dict[str, Any] = field(default_factory=dict)
 
     @property
     def server_info(self) -> ServerInfo:
@@ -58,12 +53,10 @@ class McpServer:
         name: str,
         description: str,
         input_schema: dict[str, Any] | None = None,
-    ) -> Callable[[Callable[..., Awaitable[Any]]], Callable[..., Awaitable[Any]]]:
+    ) -> Any:
         """Decorator to register a tool."""
 
-        def decorator(
-            func: Callable[..., Awaitable[Any]],
-        ) -> Callable[..., Awaitable[Any]]:
+        def decorator(func: Any) -> Any:
             schema = input_schema or {"type": "object", "properties": {}}
             self._tools[name] = Tool(
                 name=name,
@@ -81,15 +74,10 @@ class McpServer:
         name: str,
         description: str | None = None,
         mime_type: str | None = None,
-    ) -> Callable[
-        [Callable[[str], Awaitable[dict[str, Any]]]],
-        Callable[[str], Awaitable[dict[str, Any]]],
-    ]:
+    ) -> Any:
         """Decorator to register a resource."""
 
-        def decorator(
-            func: Callable[[str], Awaitable[dict[str, Any]]],
-        ) -> Callable[[str], Awaitable[dict[str, Any]]]:
+        def decorator(func: Any) -> Any:
             self._resources[uri] = Resource(
                 uri=uri,
                 name=name,
@@ -106,15 +94,10 @@ class McpServer:
         name: str,
         description: str | None = None,
         arguments: list[dict[str, Any]] | None = None,
-    ) -> Callable[
-        [Callable[[dict[str, str]], Awaitable[list[dict[str, str]]]]],
-        Callable[[dict[str, str]], Awaitable[list[dict[str, str]]]]
-    ]:
+    ) -> Any:
         """Decorator to register a prompt."""
 
-        def decorator(
-            func: Callable[[dict[str, str]], Awaitable[list[dict[str, str]]]],
-        ) -> Callable[[dict[str, str]], Awaitable[list[dict[str, str]]]]:
+        def decorator(func: Any) -> Any:
             self._prompts[name] = Prompt(
                 name=name,
                 description=description,
