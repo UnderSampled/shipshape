@@ -123,3 +123,11 @@
 > The honesty is about sentience, correct. We can have dialogue, but it should be honest: an LLM powered AI (like Eli, or like a smart robot) can have dialogue it generates, and any problems with its generation can honestly be attributed in-game to the peculiarities of the robot's tech (not pretending to be smarter or more sentient than it is). There should be no scripted dialogue, apart from dumb robots using scripted dialogue that is also scripted in-universe. The one exception to all of this is creatures: We can have a cat, or aliens. They won't talk, so it's less of an issue, but we will accept that as part of the fiction.
 
 *[Context: Claude asked whether the honesty principle from story.md conflicts with LLM-powered robots generating dialogue]*
+
+## On Ship Names and Difficulty Modes
+
+> I figured out the ship naming. Three difficulties/stories, each with a different ship name, and maybe different features and layout: the Intrepid (Easy, Exploration sandbox mode, all systems online — a drone ship never meant to have people aboard); the Perseverance (Normal, Survival adventure story mode, Systems offline — crew missing); the Phoenix (Hard, Horror/mystery story mode, Antagonistic systems and communications issues — crew dead).
+
+> We would start with the first two.
+
+*[Context: After all inconsistency review items were resolved, including the earlier discussion about the Phoenix ship name from the Derelict story]*
