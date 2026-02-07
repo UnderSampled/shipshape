@@ -1,0 +1,21 @@
+[project]
+name = "shipshape"
+version = "0.1.0"
+description = "A virtual spaceship MCP server with emergent robot interactions"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.0.0",
+    "networkx>=3.0",
+    "pydantic>=2.0",
+]
+
+[project.scripts]
+shipshape = "shipshape.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/shipshape"]
