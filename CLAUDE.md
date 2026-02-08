@@ -12,14 +12,14 @@ All design materials live under `design/iterations/`, ordered chronologically:
 
 3. **03-shipshape** - Claude conversation. The implementation-first version. FTL-style roguelike journey, Dwarf Fortress-style robots, a cat, MCP server architecture. Written with the intent to build the simple system first and layer in story later. The full story may or may not be used, but was captured to include in the design process.
 
-4. **04-inconsistency-review** - Claude conversation. Review of all design files for inconsistencies across the three drafts.
+4. **04-design-review** - Claude conversation. Review of all design files for inconsistencies, followed by design decisions resolving them and generation of unified design documents.
 
 The iterations are **complementary layers**, not competing designs:
 - **StarGraph** is the engine philosophy — a simulation rich enough to build stories in.
 - **Shipshape** is the game engine layer — DF robots, FTL journey, cat, system restoration make the ship complex and interesting.
 - **The Derelict** is the narrative layer — mystery, twist, communication degradation, to be woven into the engine later.
 
-The plan is to build the Shipshape engine first, then add the Derelict story on top. Surface-level inconsistencies between the docs (documented in `design/iterations/04-inconsistency-review/`) reflect this layered intent, not conflicting visions.
+The plan is to build the Shipshape engine first, then add the Derelict story on top. Surface-level inconsistencies between the earlier docs (documented in `design/iterations/04-design-review/`) reflect this layered intent, not conflicting visions. The iteration 04 generated docs represent the current unified design.
 
 ## Convention: Save Conversation Notes
 

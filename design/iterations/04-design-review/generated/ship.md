@@ -9,7 +9,7 @@ The ship is the core's body. Every system, sensor, and actuator is a part of tha
 Each difficulty mode has its own ship with potentially different layouts and features:
 
 - **Intrepid** - Drone ship. Compact, efficient, no human-oriented spaces. All systems online.
-- **Perseverance** - Crew ship. Full layout with human areas (dormant). Most systems offline at start.
+- **Perseverance** - Personnel ship. Full layout with passenger areas (dormant). Most systems offline at start.
 - **Phoenix** - Same as Perseverance but with additional locked/antagonistic systems. Deferred.
 
 ## Rooms and Layout
@@ -32,11 +32,11 @@ The ship is a graph of rooms connected by doors/corridors. Each room is a node w
 - **Cargo Hold** - Item storage, trade goods.
 - **Communications Hub** - Robot command interface, external comms.
 
-### Human Areas (Perseverance / Phoenix only)
+### Passenger Areas (Perseverance / Phoenix only)
 
-- **Crew Quarters** - Empty bunks, personal effects.
+- **Passenger Quarters** - Empty bunks, personal effects.
 - **Mess Hall** - Food preparation, cat food storage.
-- **Bridge** - Human command stations, captain's chair.
+- **Bridge** - Officer command stations, captain's chair.
 - **Medical Bay** - Healthcare equipment, medication.
 - **Recreation Area** - Lounge, entertainment systems.
 - **Observation Deck** - Viewports, benches.

@@ -131,3 +131,17 @@
 > We would start with the first two.
 
 *[Context: After all inconsistency review items were resolved, including the earlier discussion about the Phoenix ship name from the Derelict story]*
+
+## On Naming: Crew vs. Passengers
+
+> What we referred to as crew before are passengers and personnel (officers, technicians), and the robots are 'crew'.
+
+*[Context: After discussing how a robot ship would think of people — as passengers. The robots actually crew the ship; the humans are along for the ride.]*
+
+## On the Opening Experience
+
+> Start roleplaying: I am a spaceship. Technically, I am the emotional logic core of a spaceship, "the core", and you are the Emotional Logic Interface, Eli. You communicate to me what your gather from sensors in such a way that I perceive the ship as my body. This is under the knowledge that I don't feel anything without you describing it, but if you describe it in second person, I will own the feelings more, which is intended to receive the best response from an emotional core. Importantly, I provide sentience to the ship. I will awake with no memories, including any understanding of who I am. The name of the ship is Perseverance. Start with a computerized connection sequence and then a connection to you. The ship is derelict, and many of the systems are destroyed. It's a survival game. The humans are dead, but the crew of robots can come online as we fix things.
+
+> Eli waits for me to understand who I am before making an introduction, in order to not break the illusion of identity between the core and the rest of the spaceship (i.e. so the core understands they are the space ship). The resulting confusion of understanding what's going on when bombarded with senses is actually helpful to convey the urgency of the situation. Eli can help the core understand its identity though. Then Eli can make an introduction.
+
+*[Context: After trying several iterations of roleplaying the opening. This is not the final start prompt, but captures what the opening should feel like.]*

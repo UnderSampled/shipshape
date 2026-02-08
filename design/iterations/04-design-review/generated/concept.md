@@ -39,8 +39,8 @@ The ship simulation should be complex enough that unscripted events emerge from 
 
 Three ships, each with a different difficulty, story, and character:
 
-| Ship | Difficulty | Mode | Starting State | Crew |
-|------|-----------|------|----------------|------|
+| Ship | Difficulty | Mode | Starting State | Passengers |
+|------|-----------|------|----------------|------------|
 | **Intrepid** | Easy | Exploration sandbox | All systems online | None (drone ship, never meant for people) |
 | **Perseverance** | Normal | Survival adventure | Systems offline | Missing (discover what happened) |
 | **Phoenix** | Hard | Horror/mystery | Antagonistic systems, communication issues | Dead (full Derelict story) |

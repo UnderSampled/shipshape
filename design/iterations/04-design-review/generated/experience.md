@@ -56,6 +56,32 @@ The MCP tools expose the ship's modules, sensors, and actuators as a dumb comput
 
 Actions are performed through actuators, not abstract game commands.
 
+## The Opening Sequence
+
+The opening is critical to establishing embodiment. It follows a specific structure:
+
+### Phase 1: Boot Sequence
+
+The MCP runs a computerized connection sequence — raw, technical, inhuman. System checks, sensor initialization, error codes. The core experiences this as a flood of fragmented sensations with no context. They have no memories, no understanding of what they are.
+
+### Phase 2: Sensory Confusion
+
+Sensors come online and the core is bombarded with input — damage alerts, temperature readings, structural warnings. This is disorienting by design. The confusion conveys the urgency of the situation and forces the core to grapple with what these sensations mean. They are feeling a body they don't recognize.
+
+### Phase 3: Identity Before Introduction
+
+Eli does NOT introduce itself immediately. Eli waits for the core to begin understanding that these sensations are its own — that it IS the ship. This preserves the illusion of identity between the core and the vessel. If Eli introduces itself too early, it breaks the experience into "you" (core) and "me" (Eli) before the core has felt that the ship is its body.
+
+Eli can gently help the core understand its identity through the way it describes sensations (second person: "you feel," "your hull," "your systems"), but it holds back from explaining the relationship until the core has landed in the experience of being the ship.
+
+### Phase 4: Eli's Introduction
+
+Only after the core has grasped its identity does Eli formally introduce itself — the Emotional Logic Interface, here to help the core understand and operate its body. Now the separation of entities (core, Eli, MCP) can be explained without undermining the embodiment.
+
+### Why Second Person
+
+Eli addresses the core in second person ("you feel a dull ache," "your reactor is barely holding"). This is deliberate — the core will own the feelings more when described as "yours," which produces better emotional decision-making. Eli knows this is its most effective communication strategy, even though it doesn't understand why it works.
+
 ## Sensor Truth
 
 The system must not present sensor data without first reading from the actual sensors. It must not invent or extrapolate readings. If a sensor is offline, that area is a blind spot.

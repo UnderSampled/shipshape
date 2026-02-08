@@ -2,7 +2,7 @@
 
 ## Core Loop
 
-Manage ship systems, care for your crew and cat, and navigate a roguelike journey through increasingly dangerous space to reach your destination.
+Manage ship systems, care for your robot crew and cat, and navigate a roguelike journey through increasingly dangerous space to reach your destination.
 
 ```
 Restore/Manage Systems -> Handle Events -> Care for Crew/Cat -> Navigate -> Repeat
@@ -53,14 +53,14 @@ FTL-style systems, each with:
 | Drone Control | External drone deployment |
 | Communications | Robot command interface |
 
-### Dormant Human Systems
+### Dormant Passenger Systems
 
-Offline, unused. Reminders of the absent crew. Resources for cat care.
+Offline, unused. Reminders of the absent passengers. Resources for cat care.
 
 | System | Story Element |
 |--------|---------------|
 | Life Support | Needed for the cat |
-| Crew Quarters | Empty bunks, personal effects |
+| Passenger Quarters | Empty bunks, personal effects |
 | Mess Hall | Cat food storage |
 | Bridge | Dusty consoles |
 | Medical Bay | Could help the cat |
@@ -129,7 +129,7 @@ Being repaired enough to dock at the destination is a requirement. Docking is th
 | | Intrepid | Perseverance | Phoenix |
 |---|---------|-------------|---------|
 | Systems | All online | Mostly offline | Offline + antagonistic |
-| Story | Sandbox exploration | Crew missing mystery | Full horror/mystery |
+| Story | Sandbox exploration | Passengers missing mystery | Full horror/mystery |
 | Cat | Present from start | Discovered mid-game | Discovered mid-game |
 | Events | Standard | Standard | Escalating + story-driven |
 | Communications | Normal | Normal | Degrading |

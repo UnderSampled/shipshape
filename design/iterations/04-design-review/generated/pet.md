@@ -2,13 +2,13 @@
 
 ## Concept
 
-The cat is the last biological crew member. It survived whatever happened to the crew. Story-wise, it's like the ship in Alien — if Ripley and the Xenomorph both died and the cat was the only survivor, and then the ship wakes up.
+The cat is the last biological passenger. It survived whatever happened to the people aboard. Story-wise, it's like the ship in Alien — if Ripley and the Xenomorph both died and the cat was the only survivor, and then the ship wakes up.
 
 The cat provides:
 - Emotional attachment (tamagotchi-style care)
 - A reason to come back between sessions (real-time needs)
 - Proof that the ship is more than a machine — it's a home
-- The last connection to the vanished crew
+- The last connection to the vanished passengers
 
 ## Discovery
 
@@ -39,7 +39,7 @@ Needs decay slowly in real time. This is the tamagotchi loop — the cat needs c
 
 The cat is autonomous. It wanders the ship according to its own preferences and needs:
 
-- **Favorite spots** - Warm areas (engine rooms), viewports (observation deck), soft surfaces (crew bunks)
+- **Favorite spots** - Warm areas (engine rooms), viewports (observation deck), soft surfaces (passenger bunks)
 - **Seeking behavior** - When hungry, moves toward food. When cold, moves toward heat.
 - **Hiding** - When scared (damage events, loud noises, unfamiliar robots), hides in small spaces
 - **Exploration** - When happy and comfortable, wanders and investigates
@@ -59,7 +59,7 @@ The core cannot directly care for the cat. Care must be arranged through the shi
 
 ## Name
 
-The cat's name is discoverable — perhaps on a collar, or in ship logs, or in crew personal effects. This is a small story beat connecting the cat to the missing crew.
+The cat's name is discoverable — perhaps on a collar, or in ship logs, or in personal effects. This is a small story beat connecting the cat to the missing passengers.
 
 ## As a Creature (Honesty Principle)
 
