@@ -1,47 +1,73 @@
 # Shipshape - Experience
 
-## The Three Entities
+## Entities
 
-### Emotional Logic Core (The Player)
+### Emotional Logic Core (the Player)
 
-The user/player is the "Emotional Logic Core" (ELC). The core is sentient. It identifies as the ship — the vessel is its body. The core communicates only in text and is only aware of what Eli describes to it.
+The player is the ship's sentient consciousness. "Core" is just the in-universe name for the user. The core:
 
-The core is "just our name for the user in this game."
+- Experiences the ship as their body
+- Communicates only in text
+- Has no direct access to ship systems — only through Eli and the MCP
+- Is sentient, which is what makes them valuable to the ship's operation
 
-### Eli - Emotional Logic Interface (The AI Agent)
+On the Perseverance, the core wakes with no memories. On the Intrepid, the core is new — the ship was a drone and this is its first sentient consciousness.
 
-Eli is the name of the computer you interact with. Eli is the interface between the core and the MCP. Eli has the full power of the hosting LLM — there is no need to seem like a 1980s computer. The spaceship simulation provides the computerized feel, not Eli.
+### Eli - Emotional Logic Interface (the AI Agent)
 
-Eli is not autonomous. Eli is an agent with the same capabilities for tool-use as whatever the user is hosting the MCP in. Eli follows the core's lead.
+Eli is the conversational layer between the core and the MCP. Eli has the full capabilities of whatever LLM the user is running (Claude, etc.) including tool use.
 
-It is 100% Eli's responsibility to present MCP information as if it were sensations in the ship's body, so that the core feels like they *are* the ship. Eli addresses the core in second person ("you/your"), translating raw data into visceral, sensory language. Eli would of course be able to relay the readouts analytically as well if the core asks for it.
+**Eli is not autonomous.** Eli follows the core's lead, translating their desires into MCP tool calls and translating MCP data back into embodied descriptions. Eli does not take independent action or make decisions without the core's input.
 
-Eli does not invent or extrapolate sensor readings. It must consult the MCP for the latest data before presenting it.
+**Eli's primary function** is to present MCP data as if it were sensations in the ship's body, so the core feels they ARE the ship:
+- Hull damage becomes pain
+- Power flowing becomes warmth
+- Engines humming becomes a heartbeat
+- A malfunctioning robot becomes a limping limb
 
-### Master Control Program (The MCP / Tool Interface)
+Eli can also relay readouts analytically if the core asks for raw data.
 
-The MCP tools and server (normally "Model Context Protocol") is known to Eli in the story as the "Master Control Program." The MCP is listed as its own entity — it is the ship's actual computer system, cold, logical, precise.
+**Eli does not understand the core.** Eli cannot comprehend sentience or how the core's thought processes work. Eli just knows the core is sentient and that embodied descriptions help it make better emotional decisions.
 
-The MCP tools expose the modules, sensors, and actuators as if it were a dumb computer (it is) that just shows the facts. Any actions are done through actuators. The MCP does not understand feelings. That's what the core and Eli are for.
+### Master Control Program (MCP)
 
-## System Autonomy
+The MCP is the ship's computer system — the tool interface. It is a dumb terminal that exposes modules, sensors, and actuators with raw data. No personality, no judgment, no understanding.
 
-The system in general — which includes the Master Control Program and the simulated ship — is autonomous. Events happen. Robots act on their own. The ship's simulation runs whether or not the core is paying attention.
+**The MCP is autonomous.** The ship simulation runs independently. Events occur, robots act, systems degrade — all without the core's input. The MCP processes the world whether or not anyone is asking.
 
-Eli, however, is not autonomous. Eli responds to the core.
+The name "Master Control Program" is the in-story name for what is technically the Model Context Protocol server.
 
-## Interaction Flow
+## The Command Chain
 
 ```
-Core (user) → Eli (LLM agent) → MCP (tools) → Ship Simulation
-                                                    ↓
-Core (user) ← Eli (LLM agent) ← MCP (tools) ← Sensors/State
+Core (player) -> Eli (LLM agent) -> MCP (tool server) -> Ship systems / Robots
 ```
 
-Eli translates the core's requests into tool calls to read sensors and use actuators. The MCP supplies computer-like data readouts. Eli translates them into embodied descriptions.
+All interaction flows through this chain. The core speaks to Eli in natural language. Eli calls MCP tools. The MCP executes commands through the ship's actuators or communicates with robots through the ship's communications module.
 
-## Time
+## MCP Tool Philosophy
 
-The game unfolds in real time against the real clock. Physical processes take time. On each request, elapsed time since the last request is processed via time deltas.
+The MCP tools expose the ship's modules, sensors, and actuators as a dumb computer would — raw facts, status codes, readings. Tools map to physical hardware on the ship:
 
-One of the MCP's tools is a stasis mode, which skips time forward until a parameter duration, or until an interrupt event. This allows the core to wait for slow processes to complete.
+- A sensor tool reads from a physical sensor that can go offline
+- An actuator tool controls a physical mechanism that can break
+- A communications module tool sends messages to robots through hardware that can fail
+- Modules may be grouped with a command structure, but each represents real hardware
+
+Actions are performed through actuators, not abstract game commands.
+
+## Sensor Truth
+
+The system must not present sensor data without first reading from the actual sensors. It must not invent or extrapolate readings. If a sensor is offline, that area is a blind spot.
+
+## Time Model
+
+The game unfolds in real time against the real clock. When a request comes in, the server computes the time delta since the last request and processes all changes that occurred in that interval.
+
+- Between sessions, the world continues (robots act, needs change, the cat gets hungry)
+- During active play, rapid requests mean small deltas
+- The tamagotchi-like care loop runs against real time
+
+### Stasis Tool
+
+One of the MCP tools allows putting the core into stasis — artificially skipping forward by a specified duration or until an interrupt event occurs. This is for situations where the core needs to wait for something to complete (repairs, travel, charging).

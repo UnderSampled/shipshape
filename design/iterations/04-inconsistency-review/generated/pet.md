@@ -2,50 +2,65 @@
 
 ## Concept
 
-The cat wasn't in the original concept, but emerged from the generated design and is being built up. Story-wise, it's like the ship in Alien, but if Ripley and the Xenomorph both died and the cat was the only survivor — and then the ship wakes up.
+The cat is the last biological crew member. It survived whatever happened to the crew. Story-wise, it's like the ship in Alien — if Ripley and the Xenomorph both died and the cat was the only survivor, and then the ship wakes up.
 
-The cat provides something to come back for and take care of, which has a real-time (slow time) component to it. Emotional attachment is the goal. Tamagotchi is the inspiration.
+The cat provides:
+- Emotional attachment (tamagotchi-style care)
+- A reason to come back between sessions (real-time needs)
+- Proof that the ship is more than a machine — it's a home
+- The last connection to the vanished crew
 
 ## Discovery
 
-The cat must not be discovered right up front, nor mentioned in any diagnostics or documentation until it's discovered during play. The player should first learn what it means to be a (derelict) ship before encountering the one biological survivor.
+**The cat must not be mentioned before it is discovered during play.** It should not appear in:
+- The start_game prompt or Eli's initial instructions
+- Any diagnostics or system readouts before discovery
+- The README or any player-facing documentation
 
-The start_game prompt and any player-facing materials must not mention the cat.
+The cat is discovered during Phase 3 of progression (on the Perseverance), when life support is partially restored. On the Intrepid, the cat may be present from the start since there's no story mystery.
+
+The discovery moment should be surprising and emotional — the core has been learning what it means to be a ship, surrounded by machines, and suddenly there's something alive.
 
 ## Needs
 
-| Need | Source |
-|------|--------|
-| Hunger | Food from mess hall stores |
-| Thirst | Water |
-| Warmth | Heated areas (life support) |
-| Health | Can get sick or injured |
-| Happiness | Attention, comfort, routine |
+The cat has real-time needs that change against the wall clock, even between sessions:
 
-These tick against the real clock — the cat's needs change while the player is away. This is the tamagotchi element.
+| Need | Range | Effect When Low |
+|------|-------|-----------------|
+| Hunger | 0-100 | Seeks food, becomes distressed, health declines |
+| Thirst | 0-100 | Seeks water, becomes distressed, health declines |
+| Warmth | 0-100 | Seeks warm areas, becomes lethargic |
+| Health | 0-100 | Slows down, may become immobile |
+| Happiness | 0-100 | Affects behavior (hiding vs. exploring, trust vs. skittishness) |
+
+Needs decay slowly in real time. This is the tamagotchi loop — the cat needs care even when the player isn't actively playing.
 
 ## Behavior
 
-- Wanders autonomously through accessible ship areas
-- Has favorite spots (warm engine rooms, crew bunks, observation deck viewports)
-- Hides when scared (damage events, loud noises)
-- Gets into trouble (stuck behind closed doors, wandering into dangerous areas)
-- Reacts to robots (may follow friendly ones, avoid others)
+The cat is autonomous. It wanders the ship according to its own preferences and needs:
+
+- **Favorite spots** - Warm areas (engine rooms), viewports (observation deck), soft surfaces (crew bunks)
+- **Seeking behavior** - When hungry, moves toward food. When cold, moves toward heat.
+- **Hiding** - When scared (damage events, loud noises, unfamiliar robots), hides in small spaces
+- **Exploration** - When happy and comfortable, wanders and investigates
+- **Robot reactions** - May follow friendly/familiar robots, avoid unfamiliar ones
+- **Trouble** - Can get stuck behind closed doors, wander into dangerous areas, get caught in hazardous conditions
 
 ## Care
 
-The core cannot directly interact with the cat. Care happens through the robot crew:
+The core cannot directly care for the cat. Care must be arranged through the ship's systems and robots:
 
-- Filling food and water bowls
-- Maintaining warm areas
-- Retrieving cat from dangerous locations
-- Medical attention if sick
+- **Feeding** - Robots tasked with filling food bowls from mess hall stores
+- **Water** - Robots maintaining water supply
+- **Warmth** - Life support maintaining temperature in cat-occupied areas
+- **Medical** - Medical bay equipment for illness/injury (robot-operated)
+- **Retrieval** - Robots sent to retrieve cat from dangerous locations
+- **Environment** - Keeping rooms safe, doors managed to prevent cat from accessing hazardous areas
 
-## Significance
+## Name
 
-Among all the robots and systems, this small biological creature is:
-- The last connection to the vanished crew
-- A living thing that needs you
-- Proof that you are more than a machine
+The cat's name is discoverable — perhaps on a collar, or in ship logs, or in crew personal effects. This is a small story beat connecting the cat to the missing crew.
 
-The cat is an accepted part of the fiction — it won't talk, and we accept simulating its behavior as part of the game.
+## As a Creature (Honesty Principle)
+
+The cat is a simulated creature. We accept this as part of the fiction. The cat doesn't talk, so the honesty question is less acute than with speaking characters. Its behavior is driven by simple need/preference simulation, which is honest to what the simulation actually does.

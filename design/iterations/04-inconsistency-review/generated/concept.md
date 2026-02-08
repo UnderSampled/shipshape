@@ -1,49 +1,48 @@
 # Shipshape - Concept
 
-## High Concept
+## Elevator Pitch
 
-A text-based spaceship simulation exposed through an MCP server. The player is the ship's sentient consciousness, working through an AI interface to manage systems, crew, and journey. The MCP server is the player's only interaction with the virtual spaceship.
+A text-based spaceship simulation played through an MCP server. The player is the ship's sentient consciousness. An AI agent (Eli) translates between the player's emotions and the ship's computer systems. The ship's simulation runs autonomously — robots act, systems degrade, events occur — and the player experiences it all as sensations in their own body.
 
 ## Inspirations
 
-- **Dwarf Fortress** - Emergent behavior from simple autonomous agents with needs and traits. Procedural terrain/world generation.
-- **FTL** - Ship systems management, roguelike journey through sectors, events and encounters.
-- **MUD** - Graph-based prepositional relationships for locations, containment, and spatial reasoning.
-- **Tamagotchi** - A pet to come back for and take care of, with a real-time (slow time) component. Emotional attachment.
-- **D&D / Dungeon Mastering** - A world with actors, motivations, and triggers for scripted encounters. Procedural dungeon modules.
-- **Elite / Frontier** - Rolling from tables to generate solar systems, economies. Procedural outer space as backdrop.
-- **Alien** - The ship in Alien, but if Ripley and the Xenomorph both died and the cat was the only survivor — and then the ship wakes up.
-- **Roguelike (Rogue)** - World updates only on input turns. Seeded procedural generation. Permadeath implied.
-- **Metroidvania** - Come back to areas after discovering information, fixing things up, unlocking doors.
-- **Star Citizen** - An engine to build stories in; single-player story layered onto a complex simulation.
+- **Dwarf Fortress** - Emergent behavior from simple needs-driven actors. Procedural terrain/world generation. Complex systems creating unscripted stories.
+- **FTL: Faster Than Light** - Ship systems management, power allocation, roguelike sector progression, events and encounters.
+- **MUD (Multi-User Dungeon)** - Graph-based prepositional relationships for spatial state. "The wrench is on the workbench in the engine room."
+- **Tamagotchi** - Real-time (slow) care loop. The cat needs you even when you're away. Emotional attachment to a simple creature.
+- **D&D / Dungeon Mastering** - Scripted encounters with actors and motivations, set within a procedurally generated world. Tables and rolls for variety.
+- **Elite / Frontier** - Procedural generation of solar systems, economies, and trade from tables and seeds. The vastness of space as backdrop.
+- **Alien (1979)** - A ship with a cat. Everyone else is dead. The ship wakes up.
+- **Roguelike (genre)** - Seeded world generation, permadeath tension, turn-based input advancing the world, journey through increasingly dangerous territory.
+- **Return of the Obra Dinn** - Investigating what happened aboard a ship through evidence and inference. Piecing together identities and events.
 
-## Design Principles
-
-### Engine First, Story Later
-
-The Dwarf-Fortress + FTL style survival game makes the spaceship complex enough to be interesting when it comes time to explore it for the story. The engine is built first. The narrative is layered on top.
+## Design Pillars
 
 ### The Honesty Principle
 
-The game respects what AI can and cannot authentically do:
+The game respects what AI can and cannot do:
 
-- An LLM-powered AI (like Eli, or like a smart robot) can have dialogue it generates, and any problems with its generation can honestly be attributed in-game to the peculiarities of the robot's tech — not pretending to be smarter or more sentient than it is.
-- There should be no scripted dialogue, apart from dumb robots using scripted dialogue that is also scripted in-universe.
-- Creatures (the cat, aliens) are an accepted part of the fiction. They won't talk, so it's less of an issue.
-- The player's sentience is real. The AI's lack of sentience is honest.
+- **No faked sentience.** Eli and the MCP are explicitly non-sentient. Their capabilities match what AI systems actually do.
+- **Honest dialogue.** LLM-powered entities (Eli, smart robots) generate their own dialogue. Any quirks in their speech are honestly attributable to their in-universe technology. No scripted dialogue, except for dumb robots using canned responses that are also canned in-universe.
+- **Player consciousness is real.** The player genuinely experiences the role. We never interfere with their thoughts.
+- **Creatures are fiction.** Cats, aliens, and other non-talking creatures are accepted as part of the simulation fiction.
 
-### Complementary Layers
+### Embodiment
 
-- **StarGraph** is the engine philosophy — a simulation rich enough to build stories in.
-- **Shipshape** is the game engine layer — robots, journey, cat, system restoration.
-- **The Derelict** is the narrative layer — mystery, twist, to be woven in later.
+The ship is the player's body. Eli's job is to translate raw MCP data into visceral, sensory language so the player feels they ARE the ship. The MCP itself is a dumb computer showing facts.
 
-## Three Ships / Three Modes
+### Emergent Complexity
+
+The ship simulation should be complex enough that unscripted events emerge from the interaction of simple systems — robots competing for resources, cascading failures, unexpected discoveries.
+
+## Difficulty Modes / Ships
+
+Three ships, each with a different difficulty, story, and character:
 
 | Ship | Difficulty | Mode | Starting State | Crew |
 |------|-----------|------|----------------|------|
-| **Intrepid** | Easy | Exploration sandbox | All systems online | A drone ship never meant to have people aboard |
-| **Perseverance** | Normal | Survival adventure | Systems offline | Crew missing |
-| **Phoenix** | Hard | Horror/mystery | Antagonistic systems and communications issues | Crew dead |
+| **Intrepid** | Easy | Exploration sandbox | All systems online | None (drone ship, never meant for people) |
+| **Perseverance** | Normal | Survival adventure | Systems offline | Missing (discover what happened) |
+| **Phoenix** | Hard | Horror/mystery | Antagonistic systems, communication issues | Dead (full Derelict story) |
 
-The first two are the initial build targets. The Phoenix incorporates the full Derelict story.
+The Intrepid and Perseverance are the initial build targets. The Phoenix incorporates the full Derelict narrative and is deferred.

@@ -1,41 +1,65 @@
 # Shipshape - Story
 
-## Three Stories
-
-Each ship/difficulty mode has its own narrative context:
+## Story Per Ship
 
 ### The Intrepid (Easy)
 
-A drone ship never meant to have people aboard. All systems online. Exploration sandbox — no crisis, no mystery, just a complex ship to learn and a universe to explore. The cat is still discoverable.
+No story. The Intrepid is a drone ship — it was never meant to have people aboard. The core is a new consciousness, experiencing sentience for the first time. There is no crew mystery because there was never a crew.
+
+The Intrepid is a sandbox for exploration, system management, and the roguelike journey. Story emerges from the simulation itself: robot interactions, encounters in space, the cat.
 
 ### The Perseverance (Normal)
 
-A survival adventure. Systems offline, crew missing. The player wakes up, restores the ship, discovers the cat, and journeys to a repair facility. There is some amount of discovering what happened to the human crew, though the full mystery is not the focus.
+The core wakes with no memories aboard a damaged ship. The crew is missing. Systems are offline. Eli doesn't know what happened.
 
-Human-centered systems can be found in the ship, lying dormant and unused — reminders of whoever was here before.
+As the core restores systems and explores the ship, evidence of the crew is found: personal effects in crew quarters, logs in data systems, damage patterns that tell a story. The player pieces together what happened through investigation — who these people were, why they're gone.
 
-### The Phoenix (Hard — deferred)
+The full details of the crew's fate are a design question to be developed. The key constraints:
+- The crew existed and is now absent
+- Evidence is found through exploration, not exposition
+- The mystery motivates restoration (unlock more ship = find more clues)
+- No scripted crew dialogue — only logs, records, environmental evidence
+- The story does not require communication degradation mechanics
 
-The full Derelict story. Horror/mystery mode with antagonistic systems and communications issues. Crew dead. Three-act mystery with midpoint twist. Communication degradation mechanic. The full "I used to be human" plot.
+### The Phoenix (Hard) — Deferred
 
-This mode incorporates the narrative from the Derelict iteration. It is deferred until the engine is solid.
+The full Derelict narrative. The original Emotional Logic Core malfunctioned (biological component dying from missed maintenance). A crew member uploaded themselves to replace it. The ship has secret military orders to destroy a colony world. The crew had been stalling to prevent this.
 
-## Narrative Frame
+This mode adds:
+- Communication degradation (corrupted inputs/outputs)
+- Eli trust/distrust arc
+- Bio-support repair race
+- The Phoenix naming reveal
+- Antagonistic system behavior
 
-The player doesn't have a name inside the ship — they are the emotional logic core, but they would identify as the ship. They wake up with no memories. Fresh boot, so they can experience what it's like for a ship to wake up to sentience.
+This is deferred until the engine is solid and the simpler modes are working.
 
-Eli might be able to dig up memories and play them back evocatively, in a way that reads to the core as if they're memories, but it has to be "reminded" of them.
+## The Honesty Principle
 
-## The Cat as Story Beat
+### What AI Can Do Honestly
 
-The cat should not be discovered right up front, nor mentioned in any diagnostics or documentation until it's discovered during play. The player should first learn what it means to be a (derelict) ship before encountering the one biological survivor.
+- **Eli generates dialogue** as the Emotional Logic Interface. Eli's warmth, patience, and expressiveness are design features of the interface, not faked sentience.
+- **Smart robots generate dialogue** through their own AI. Any quirks, limitations, or oddities in their speech are honestly attributable to the peculiarities of their technology.
+- **Dumb robots use canned responses** that are also canned in-universe — pre-programmed status messages, acknowledgments, error codes.
 
-The discovery of the cat changes the emotional register of the game: you are not just a ship. You are a home.
+### What We Don't Fake
 
-## No Sentient Beings
+- No scripted dialogue pretending to be generated
+- No AI pretending to be smarter or more sentient than it is
+- No simulated human crew members speaking or making decisions
+- The crew exists only through evidence: logs, records, environmental state, personal effects
 
-A full variety of encounters, but never meeting another sentient being, to be true to life. Automated stations, derelict ships, and non-sentient creatures are allowed.
+### The Exception: Creatures
 
-## Crew Discovery (Perseverance)
+Cats, aliens, and other non-speaking creatures are accepted as part of the simulation fiction. They don't talk, so the honesty question is less acute. Their behavior is simulated, and we accept that.
 
-The player discovers traces of the absent crew — dormant human systems, personal effects, perhaps logs. The full explanation of what happened is not required for this mode, but there should be enough to wonder about.
+## Discovering the Past
+
+On the Perseverance and Phoenix, the player gradually uncovers what happened aboard the ship. Evidence types:
+
+- **Physical evidence** - Damage patterns, debris, environmental states
+- **Data evidence** - System logs, mission files, medical records, diagnostics
+- **Personal effects** - Items in crew quarters, photos, half-read books
+- **Ship configuration** - Why certain doors are locked, why systems were shut down in a particular order
+
+The player interprets this evidence. Eli can help analyze data but cannot feel what it means. The core's sentient judgment is what turns facts into understanding.
